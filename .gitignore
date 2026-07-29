@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Ignoring Lock Files
 bun.lock
+
+# Ignoring .claude files
+.claude
