@@ -1,0 +1,48 @@
+{
+  "zones": [
+    { "id": "z_central", "label": "Central Dhaka" },
+    { "id": "z_outer", "label": "Outer City Corporation (Gazipur, Narayanganj, Savar)" },
+    { "id": "z_other", "label": "Other areas" }
+  ],
+  "buildingTypes": [
+    { "id": "a1", "category": "residential", "label": "Single Family House (A1)" },
+    { "id": "a2", "category": "residential", "label": "Two-Family House (A2)" },
+    { "id": "a3", "category": "residential", "label": "Flat / Apartment Building (A3)" },
+    { "id": "a4", "category": "residential", "label": "Mess / Boarding / Dormitory / Hostel (A4)" },
+    { "id": "a5", "category": "residential", "label": "Hotel / Motel / Guest House / Serviced Apartment (A5)" },
+    { "id": "a6", "category": "residential", "label": "Affordable Housing (A6)" }
+  ],
+  "roadWidths": [
+    { "id": "rw_1", "label": "Less than 1.8 meters", "min_meters": 0, "max_meters": 1.79 },
+    { "id": "rw_2", "label": "1.8 - 2.5 meters", "min_meters": 1.8, "max_meters": 2.5 },
+    { "id": "rw_3", "label": "2.5 - 3.66 meters", "min_meters": 2.51, "max_meters": 3.66 },
+    { "id": "rw_4", "label": "3.66 - 4.88 meters", "min_meters": 3.67, "max_meters": 4.88 },
+    { "id": "rw_5", "label": "4.88 - 6.0 meters", "min_meters": 4.89, "max_meters": 6.0 },
+    { "id": "rw_6", "label": "6.0 - 9.0 meters", "min_meters": 6.01, "max_meters": 9.0 },
+    { "id": "rw_7", "label": "9.0 - 12.0 meters", "min_meters": 9.01, "max_meters": 12.0 },
+    { "id": "rw_8", "label": "12.0 - 24.0 meters", "min_meters": 12.01, "max_meters": 24.0 },
+    { "id": "rw_9", "label": "Greater than 24 meters", "min_meters": 24.01, "max_meters": 99.0 }
+  ],
+  "bonusIncentives": [
+    { "id": "b_none", "label": "No Bonus", "bonus_far": 0.0 },
+    { "id": "b_school", "label": "School Facility Land", "bonus_far": 0.25 },
+    { "id": "b_park", "label": "Playground / Park Land", "bonus_far": 0.25 },
+    { "id": "b_affordable", "label": "Affordable Housing Units (min 5 units)", "bonus_far": 0.75 },
+    { "id": "b_tod", "label": "Transit-Oriented Development (TOD) Zone", "bonus_far": 0.5 },
+    { "id": "b_tdr", "label": "TDR Purchase (Heritage / Conservation)", "bonus_far": 0.0 }
+  ],
+  "blockSizes": [
+    { "id": "blk_1", "label": "10 - 20 katha" },
+    { "id": "blk_2", "label": "20 katha - 2 acre" },
+    { "id": "blk_3", "label": "2 - 5 acre" },
+    { "id": "blk_4", "label": "Greater than 5 acre" }
+  ],
+  "scalarInputs": [
+    { "id": "plot_area", "label": "Plot Area", "type": "number", "unit": "katha", "required": true, "min": 0 },
+    { "id": "fronting_road_width", "label": "Fronting Road Width", "type": "number", "unit": "meters", "required": true, "min": 0 },
+    { "id": "road_slated_for_widening", "label": "Road slated for widening", "type": "boolean", "required": false },
+    { "id": "widened_road_width", "label": "Widened Road Width", "type": "number", "unit": "meters", "required": false, "min": 0 },
+    { "id": "average_unit_size", "label": "Average Dwelling-Unit Size", "type": "number", "unit": "sq_ft", "required": true, "min": 0 },
+    { "id": "density_block_code", "label": "Density-Zoning Block Code", "type": "text", "placeholder": "e.g. DNCC-29, DSCC-15, DSCC-42", "required": false }
+  ]
+}
