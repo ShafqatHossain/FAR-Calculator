@@ -1,48 +1,1706 @@
 {
-  "zones": [
-    { "id": "z_central", "label": "Central Dhaka" },
-    { "id": "z_outer", "label": "Outer City Corporation (Gazipur, Narayanganj, Savar)" },
-    { "id": "z_other", "label": "Other areas" }
+  "occupancyTypes": [
+    {
+      "id": "a1",
+      "category": "residential",
+      "label": "Single Family Residence (A1)"
+    },
+    {
+      "id": "a2",
+      "category": "residential",
+      "label": "Two Family Residence (A2)"
+    },
+    {
+      "id": "a3",
+      "category": "residential",
+      "label": "Flat / Apartment Building (A3)"
+    },
+    {
+      "id": "a4",
+      "category": "residential",
+      "label": "Mess / Boarding / Dormitory / Hostel (A4)"
+    },
+    {
+      "id": "a5",
+      "category": "residential",
+      "label": "Hotel / Motel / Guest House / Rest House (A5)"
+    },
+    {
+      "id": "a6",
+      "category": "residential",
+      "label": "Old Age Home / Senior Care (A6)"
+    },
+    {
+      "id": "b1",
+      "category": "educational",
+      "label": "Pre-school & Primary, up to 12 yrs (B1)"
+    },
+    {
+      "id": "b2",
+      "category": "educational",
+      "label": "Secondary & Higher Educational (B2)"
+    },
+    {
+      "id": "b3",
+      "category": "educational",
+      "label": "Day-care Center (B3)"
+    },
+    {
+      "id": "c1",
+      "category": "institutional",
+      "label": "Children's Hospital (C1)"
+    },
+    {
+      "id": "c2",
+      "category": "institutional",
+      "label": "Clinic with Bed Facilities (C2)"
+    },
+    {
+      "id": "c3",
+      "category": "institutional",
+      "label": "Clinic without Bed Facilities (C3)"
+    },
+    {
+      "id": "c4",
+      "category": "institutional",
+      "label": "Penal / Mental Institution (Children) (C4)"
+    },
+    {
+      "id": "c5",
+      "category": "institutional",
+      "label": "Penal / Mental Institution (Adults) (C5)"
+    },
+    {
+      "id": "d1",
+      "category": "health_care",
+      "label": "General Health Care / Pharmacy (D1)"
+    },
+    {
+      "id": "d2",
+      "category": "health_care",
+      "label": "Specialized Health Care / ICU (D2)"
+    },
+    {
+      "id": "d3",
+      "category": "health_care",
+      "label": "Blood Bank / Diagnostic Lab (D3)"
+    },
+    {
+      "id": "e1",
+      "category": "business",
+      "label": "Offices (E1)"
+    },
+    {
+      "id": "e2",
+      "category": "business",
+      "label": "Laboratories & Research (E2)"
+    },
+    {
+      "id": "e3",
+      "category": "business",
+      "label": "Essential Emergency Services (E3)"
+    },
+    {
+      "id": "f1",
+      "category": "mercantile",
+      "label": "Small Shops & Markets, under 300 m² (F1)"
+    },
+    {
+      "id": "f2",
+      "category": "mercantile",
+      "label": "Large Shops & Markets, 300 m² or more (F2)"
+    },
+    {
+      "id": "f3",
+      "category": "mercantile",
+      "label": "Refueling / Filling Station (F3)"
+    },
+    {
+      "id": "g1",
+      "category": "industrial",
+      "label": "Low Hazard / Cottage Industries (G1)"
+    },
+    {
+      "id": "g2",
+      "category": "industrial",
+      "label": "Moderate Hazard Industries (G2)"
+    },
+    {
+      "id": "h1",
+      "category": "storage",
+      "label": "Low Fire Risk Storage (H1)"
+    },
+    {
+      "id": "h2",
+      "category": "storage",
+      "label": "Moderate Fire Risk Storage (H2)"
+    },
+    {
+      "id": "i1",
+      "category": "assembly",
+      "label": "Large Assembly, Fixed Seats (I1)"
+    },
+    {
+      "id": "i2",
+      "category": "assembly",
+      "label": "Small Assembly, Fixed Seats (I2)"
+    },
+    {
+      "id": "i3",
+      "category": "assembly",
+      "label": "Large Assembly, Moveable Seats (I3)"
+    },
+    {
+      "id": "i4",
+      "category": "assembly",
+      "label": "Small Assembly, Moveable Seats (I4)"
+    },
+    {
+      "id": "i5",
+      "category": "assembly",
+      "label": "Sports Facility / Stadium (I5)"
+    },
+    {
+      "id": "j1",
+      "category": "hazardous",
+      "label": "Explosion Hazard Building (J1)"
+    },
+    {
+      "id": "j2",
+      "category": "hazardous",
+      "label": "Chemical Hazard Building (J2)"
+    },
+    {
+      "id": "j3",
+      "category": "hazardous",
+      "label": "Biological Hazard Building (J3)"
+    },
+    {
+      "id": "j4",
+      "category": "hazardous",
+      "label": "Radiation Hazard Building (J4)"
+    },
+    {
+      "id": "k1",
+      "category": "parking",
+      "label": "Commercial Parking Facility (K1)"
+    },
+    {
+      "id": "k2",
+      "category": "parking",
+      "label": "Privately Owned Parking (K2)"
+    },
+    {
+      "id": "k3",
+      "category": "parking",
+      "label": "Vehicle Repair Garage (K3)"
+    },
+    {
+      "id": "l",
+      "category": "utility",
+      "label": "Utility Service Structures (L)"
+    },
+    {
+      "id": "m1",
+      "category": "miscellaneous",
+      "label": "Special Structures / Monuments (M1)"
+    },
+    {
+      "id": "m2",
+      "category": "miscellaneous",
+      "label": "Boundary Wall / Reservoir / Tower (M2)"
+    }
   ],
-  "buildingTypes": [
-    { "id": "a1", "category": "residential", "label": "Single Family House (A1)" },
-    { "id": "a2", "category": "residential", "label": "Two-Family House (A2)" },
-    { "id": "a3", "category": "residential", "label": "Flat / Apartment Building (A3)" },
-    { "id": "a4", "category": "residential", "label": "Mess / Boarding / Dormitory / Hostel (A4)" },
-    { "id": "a5", "category": "residential", "label": "Hotel / Motel / Guest House / Serviced Apartment (A5)" },
-    { "id": "a6", "category": "residential", "label": "Affordable Housing (A6)" }
-  ],
-  "roadWidths": [
-    { "id": "rw_1", "label": "Less than 1.8 meters", "min_meters": 0, "max_meters": 1.79 },
-    { "id": "rw_2", "label": "1.8 - 2.5 meters", "min_meters": 1.8, "max_meters": 2.5 },
-    { "id": "rw_3", "label": "2.5 - 3.66 meters", "min_meters": 2.51, "max_meters": 3.66 },
-    { "id": "rw_4", "label": "3.66 - 4.88 meters", "min_meters": 3.67, "max_meters": 4.88 },
-    { "id": "rw_5", "label": "4.88 - 6.0 meters", "min_meters": 4.89, "max_meters": 6.0 },
-    { "id": "rw_6", "label": "6.0 - 9.0 meters", "min_meters": 6.01, "max_meters": 9.0 },
-    { "id": "rw_7", "label": "9.0 - 12.0 meters", "min_meters": 9.01, "max_meters": 12.0 },
-    { "id": "rw_8", "label": "12.0 - 24.0 meters", "min_meters": 12.01, "max_meters": 24.0 },
-    { "id": "rw_9", "label": "Greater than 24 meters", "min_meters": 24.01, "max_meters": 99.0 }
-  ],
-  "bonusIncentives": [
-    { "id": "b_none", "label": "No Bonus", "bonus_far": 0.0 },
-    { "id": "b_school", "label": "School Facility Land", "bonus_far": 0.25 },
-    { "id": "b_park", "label": "Playground / Park Land", "bonus_far": 0.25 },
-    { "id": "b_affordable", "label": "Affordable Housing Units (min 5 units)", "bonus_far": 0.75 },
-    { "id": "b_tod", "label": "Transit-Oriented Development (TOD) Zone", "bonus_far": 0.5 },
-    { "id": "b_tdr", "label": "TDR Purchase (Heritage / Conservation)", "bonus_far": 0.0 }
-  ],
-  "blockSizes": [
-    { "id": "blk_1", "label": "10 - 20 katha" },
-    { "id": "blk_2", "label": "20 katha - 2 acre" },
-    { "id": "blk_3", "label": "2 - 5 acre" },
-    { "id": "blk_4", "label": "Greater than 5 acre" }
-  ],
-  "scalarInputs": [
-    { "id": "plot_area", "label": "Plot Area", "type": "number", "unit": "katha", "required": true, "min": 0 },
-    { "id": "fronting_road_width", "label": "Fronting Road Width", "type": "number", "unit": "meters", "required": true, "min": 0 },
-    { "id": "road_slated_for_widening", "label": "Road slated for widening", "type": "boolean", "required": false },
-    { "id": "widened_road_width", "label": "Widened Road Width", "type": "number", "unit": "meters", "required": false, "min": 0 },
-    { "id": "average_unit_size", "label": "Average Dwelling-Unit Size", "type": "number", "unit": "sq_ft", "required": true, "min": 0 },
-    { "id": "density_block_code", "label": "Density-Zoning Block Code", "type": "text", "placeholder": "e.g. DNCC-29, DSCC-15, DSCC-42", "required": false }
-  ]
+  "landDetails": {},
+  "locationDetails": {
+    "zones": [
+      {
+        "id": "z_central",
+        "label": "Central Dhaka"
+      },
+      {
+        "id": "z_outer",
+        "label": "Outer City Corporation (Gazipur, Narayanganj, Savar)"
+      },
+      {
+        "id": "z_other",
+        "label": "Other areas"
+      }
+    ],
+    "densityBlock": [
+      {
+        "id": "01",
+        "label": "01",
+        "block_name": "Reserved",
+        "covered_area": "Airport",
+        "block_type": null,
+        "gross_ppa": 0,
+        "avg_unit_size_sqft": 0,
+        "du_per_katha": 0,
+        "area_far": 0
+      },
+      {
+        "id": "02",
+        "label": "02",
+        "block_name": "Jinjira, Kalindi, Aganagar",
+        "covered_area": "Aganagar Union, Kalindi Union, Shuvadya Union (part), Jinjira Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 940,
+        "du_per_katha": 2.3,
+        "area_far": 3
+      },
+      {
+        "id": "03",
+        "label": "03",
+        "block_name": "Bashundhara Residential Area",
+        "covered_area": "DNCC-37, 40, 42, 43 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1480,
+        "du_per_katha": 2,
+        "area_far": 8.1
+      },
+      {
+        "id": "04",
+        "label": "04",
+        "block_name": "Dakshinkhan",
+        "covered_area": "DNCC-44 (part), 45, 46, 48 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1200,
+        "du_per_katha": 1.9,
+        "area_far": 3.1
+      },
+      {
+        "id": "05",
+        "label": "05",
+        "block_name": "Faridabad",
+        "covered_area": "DNCC-49, 50",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1000,
+        "du_per_katha": 2.2,
+        "area_far": 3.1
+      },
+      {
+        "id": "06",
+        "label": "06",
+        "block_name": "Kawla",
+        "covered_area": "DNCC-47, 49 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 1150,
+        "du_per_katha": 2,
+        "area_far": 3.2
+      },
+      {
+        "id": "07",
+        "label": "07",
+        "block_name": "Uttara Phase 1 & 2",
+        "covered_area": "DNCC-1, 51 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1630,
+        "du_per_katha": 2,
+        "area_far": 8.5
+      },
+      {
+        "id": "08",
+        "label": "08",
+        "block_name": "Kamarpara",
+        "covered_area": "DNCC-53, 54 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 280,
+        "avg_unit_size_sqft": 980,
+        "du_per_katha": 2.3,
+        "area_far": 3.1
+      },
+      {
+        "id": "09",
+        "label": "09",
+        "block_name": "Mirpur",
+        "covered_area": "DNCC-2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 16, 52 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1300,
+        "du_per_katha": 1.9,
+        "area_far": 3.8
+      },
+      {
+        "id": "10",
+        "label": "10",
+        "block_name": "Keraniganj, Taranagar, Bhakurta, Konda",
+        "covered_area": "Aliratek, Amin Bazar, Baktabali, Banta, Bhakurta, Hazratpur, Kalatia, Konda, Ruhitpur, Sakta Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 860,
+        "du_per_katha": 2.1,
+        "area_far": 2.5
+      },
+      {
+        "id": "11",
+        "label": "11",
+        "block_name": "Anandanagar Embankment",
+        "covered_area": "DNCC-8, 9, 10 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 950,
+        "du_per_katha": 2,
+        "area_far": 2.6
+      },
+      {
+        "id": "12",
+        "label": "12",
+        "block_name": "Sheorapara",
+        "covered_area": "DNCC-10, 11, 12, 13, 14 (part), 16, 28 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1150,
+        "du_per_katha": 1.9,
+        "area_far": 3
+      },
+      {
+        "id": "13",
+        "label": "13",
+        "block_name": "Ibrahimpur, East Sheorapara",
+        "covered_area": "DNCC-14, 16 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1150,
+        "du_per_katha": 1.9,
+        "area_far": 3
+      },
+      {
+        "id": "14",
+        "label": "14",
+        "block_name": "Bauniya",
+        "covered_area": "DNCC-3, 4, 5, 15 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1200,
+        "du_per_katha": 2.1,
+        "area_far": 3.5
+      },
+      {
+        "id": "15",
+        "label": "15",
+        "block_name": "Khilkhet, Bhatara",
+        "covered_area": "DNCC-17, 18, 40 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1180,
+        "du_per_katha": 1.9,
+        "area_far": 3.1
+      },
+      {
+        "id": "16",
+        "label": "16",
+        "block_name": "Baridhara",
+        "covered_area": "DNCC-18, 39, 40 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1880,
+        "du_per_katha": 1.8,
+        "area_far": 8.7
+      },
+      {
+        "id": "17",
+        "label": "17",
+        "block_name": "Gulshan, Banani",
+        "covered_area": "DNCC-19 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 2100,
+        "du_per_katha": 1.9,
+        "area_far": 5.5
+      },
+      {
+        "id": "18",
+        "label": "18",
+        "block_name": "Baipail, Ashulia, Dhamsona, Iyarpur",
+        "covered_area": "Ashulia Union, Dhamsona Union, Shimulia Union, Iyarpur Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 930,
+        "du_per_katha": 2.1,
+        "area_far": 2.7
+      },
+      {
+        "id": "19",
+        "label": "19",
+        "block_name": "Korail",
+        "covered_area": "DNCC-19 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1050,
+        "du_per_katha": 1.8,
+        "area_far": 2
+      },
+      {
+        "id": "20",
+        "label": "20",
+        "block_name": "Mohakhali DOHS",
+        "covered_area": "DNCC-20 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 1580,
+        "du_per_katha": 2,
+        "area_far": 8.8
+      },
+      {
+        "id": "21",
+        "label": "21",
+        "block_name": "Niketan",
+        "covered_area": "DNCC-19, 20, 24 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 280,
+        "avg_unit_size_sqft": 1500,
+        "du_per_katha": 1.8,
+        "area_far": 3.8
+      },
+      {
+        "id": "22",
+        "label": "22",
+        "block_name": "Mohakhali",
+        "covered_area": "DNCC-20 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 960,
+        "du_per_katha": 2.5,
+        "area_far": 3.3
+      },
+      {
+        "id": "23",
+        "label": "23",
+        "block_name": "Rampura",
+        "covered_area": "DNCC-18, 21, 22, 38, 39 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1180,
+        "du_per_katha": 2.2,
+        "area_far": 3.6
+      },
+      {
+        "id": "24",
+        "label": "24",
+        "block_name": "Tejgaon I/A",
+        "covered_area": "DNCC-24, 25 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 1080,
+        "du_per_katha": 2.3,
+        "area_far": 3.3
+      },
+      {
+        "id": "25",
+        "label": "25",
+        "block_name": "Mohammadpur",
+        "covered_area": "DNCC-29, 31 (part), 32 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1100,
+        "du_per_katha": 2.2,
+        "area_far": 3.8
+      },
+      {
+        "id": "26",
+        "label": "26",
+        "block_name": "Bangram",
+        "covered_area": "Bangram Union, Tetulzhora Union (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 150,
+        "avg_unit_size_sqft": 950,
+        "du_per_katha": 1.6,
+        "area_far": 2.1
+      },
+      {
+        "id": "27",
+        "label": "27",
+        "block_name": "Baitul Aman",
+        "covered_area": "DNCC-10, 11, 30, 33 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1080,
+        "du_per_katha": 2.1,
+        "area_far": 3.2
+      },
+      {
+        "id": "28",
+        "label": "28",
+        "block_name": "Magbazar",
+        "covered_area": "DNCC-22, 35, 36 (part), DSCC-8, 10 (part), 11, 12, 13, 19 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1050,
+        "du_per_katha": 2.2,
+        "area_far": 3.2
+      },
+      {
+        "id": "29a",
+        "label": "29A",
+        "block_name": "Old Dhaka",
+        "covered_area": "DSCC-24, 25, 50-58, 59, 60, 61, 62 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1000,
+        "du_per_katha": 2.8,
+        "area_far": 3.3
+      },
+      {
+        "id": "29b",
+        "label": "29B",
+        "block_name": "Dania-Muradpur",
+        "covered_area": "DSCC-52, 53, 58, 59, 61, 62 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1000,
+        "du_per_katha": 2.8,
+        "area_far": 3.3
+      },
+      {
+        "id": "30",
+        "label": "30",
+        "block_name": "Green Model Town",
+        "covered_area": "DSCC-63, 71, 72, 73 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1350,
+        "du_per_katha": 2.1,
+        "area_far": 3.9
+      },
+      {
+        "id": "31",
+        "label": "31",
+        "block_name": "Satarkul, Nasirabad",
+        "covered_area": "DNCC-37 (part), 41-42 (part), DSCC-70 (part), 75 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 1050,
+        "du_per_katha": 1.3,
+        "area_far": 1.9
+      },
+      {
+        "id": "32",
+        "label": "32",
+        "block_name": "Basabo, Khilgaon",
+        "covered_area": "DNCC-22, 23 (part), DSCC-1-7, 40 (part), 48 (part), 49, 50 (part), 71, 72 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1160,
+        "du_per_katha": 2.1,
+        "area_far": 3.8
+      },
+      {
+        "id": "33",
+        "label": "33",
+        "block_name": "Bandar, Mograpara, Kanchpur",
+        "covered_area": "Bandar Union, Kanchpur Union, Kolagachhia Union, Madanpur Union, Muchapur Union, Sadipur",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 860,
+        "du_per_katha": 2.1,
+        "area_far": 2.5
+      },
+      {
+        "id": "34",
+        "label": "34",
+        "block_name": "Ramna, Dhaka University Area",
+        "covered_area": "DSCC-8, 9, 10 (part), 13, 18, 19, 20, 21, 22 (part), 23 (part), 26 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 1040,
+        "du_per_katha": 2.3,
+        "area_far": 3.3
+      },
+      {
+        "id": "35",
+        "label": "35",
+        "block_name": "Panthapath",
+        "covered_area": "DNCC-25, 26, 27 (part); DSCC-15, 16, 17, 18 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1100,
+        "du_per_katha": 2.2,
+        "area_far": 3.8
+      },
+      {
+        "id": "36",
+        "label": "36",
+        "block_name": "Dhanmondi Residential",
+        "covered_area": "DNCC-31 (part), 32 (part), 34 (part), DSCC-15, 17, 18 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 2000,
+        "du_per_katha": 1.8,
+        "area_far": 5
+      },
+      {
+        "id": "37",
+        "label": "37",
+        "block_name": "Narayanganj Center",
+        "covered_area": "NCC-8, 10, 11-17, Baktabali Union, Enayetnagar Union, Fatullah Union, Kashipur Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1060,
+        "du_per_katha": 2.8,
+        "area_far": 3.5
+      },
+      {
+        "id": "38",
+        "label": "38",
+        "block_name": "Tongi",
+        "covered_area": "GCC-43, 44, 45, 46, 55, 56, 57 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 990,
+        "du_per_katha": 2.3,
+        "area_far": 3.2
+      },
+      {
+        "id": "39",
+        "label": "39",
+        "block_name": "Birulia",
+        "covered_area": "Birulia Union, Savar Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 175,
+        "avg_unit_size_sqft": 946,
+        "du_per_katha": 1.8,
+        "area_far": 2.8
+      },
+      {
+        "id": "40",
+        "label": "40",
+        "block_name": "Gopalnagar, NCC 27",
+        "covered_area": "NCC-5, 6, 18-27 (part), Gopalnagar Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 930,
+        "du_per_katha": 2.1,
+        "area_far": 2.7
+      },
+      {
+        "id": "41",
+        "label": "41",
+        "block_name": "Dasherkandi, Kayetpara",
+        "covered_area": "Kayetpara Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 175,
+        "avg_unit_size_sqft": 950,
+        "du_per_katha": 1.8,
+        "area_far": 2.8
+      },
+      {
+        "id": "42a",
+        "label": "42A",
+        "block_name": "Matuail, Sarulia",
+        "covered_area": "DSCC-63 (part), 64 (part), 65, 66, 67, 68, 69 (part), 70 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 1280,
+        "du_per_katha": 1.9,
+        "area_far": 3.8
+      },
+      {
+        "id": "42b",
+        "label": "42B",
+        "block_name": "Kutubpur, Fatullah",
+        "covered_area": "NCC-1, 2, 3, 8, 7, 9 (part), Kutubpur Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 1280,
+        "du_per_katha": 1.9,
+        "area_far": 3.8
+      },
+      {
+        "id": "43",
+        "label": "43",
+        "block_name": "Pathalia",
+        "covered_area": "Pathalia Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 930,
+        "du_per_katha": 2.1,
+        "area_far": 2.7
+      },
+      {
+        "id": "44",
+        "label": "44",
+        "block_name": "Rupganj, Isapur",
+        "covered_area": "Rupganj Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 930,
+        "du_per_katha": 2.1,
+        "area_far": 2.7
+      },
+      {
+        "id": "45",
+        "label": "45",
+        "block_name": "Bhulta, Golakandail",
+        "covered_area": "Bhulta Union, Golakandail Union, Murapara Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 930,
+        "du_per_katha": 2.1,
+        "area_far": 2.7
+      },
+      {
+        "id": "46",
+        "label": "46",
+        "block_name": "Savar Municipality Area",
+        "covered_area": "SP-1, 2, 3, 4, 5, 6, 7, 8, 9, Tetulzhora Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1050,
+        "du_per_katha": 2.3,
+        "area_far": 3.8
+      },
+      {
+        "id": "47",
+        "label": "47",
+        "block_name": "Jhilmil Residential Area",
+        "covered_area": "Jhilmil Residential Area",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1600,
+        "du_per_katha": 1.9,
+        "area_far": 8.3
+      },
+      {
+        "id": "48",
+        "label": "48",
+        "block_name": "Hemayetpur, Tetulzhora",
+        "covered_area": "Tetulzhora Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 890,
+        "du_per_katha": 2.3,
+        "area_far": 2.8
+      },
+      {
+        "id": "49",
+        "label": "49",
+        "block_name": "Tarabo Municipality",
+        "covered_area": "TP-1, 2, 3, 4, 5, 6, 7, 8, 9 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 940,
+        "du_per_katha": 2.3,
+        "area_far": 3
+      },
+      {
+        "id": "50",
+        "label": "50",
+        "block_name": "Jalsiri",
+        "covered_area": "Jalsiri Residential Area",
+        "block_type": "Planned Area",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 1400,
+        "du_per_katha": 2.1,
+        "area_far": 8.1
+      },
+      {
+        "id": "51",
+        "label": "51",
+        "block_name": "Badda",
+        "covered_area": "DNCC-37, 38, 39 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1180,
+        "du_per_katha": 2.1,
+        "area_far": 3.8
+      },
+      {
+        "id": "52",
+        "label": "52",
+        "block_name": "Aftabnagar, Banashree",
+        "covered_area": "DNCC-22, 37 (part), DSCC-3, 74 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1600,
+        "du_per_katha": 1.7,
+        "area_far": 3.7
+      },
+      {
+        "id": "53",
+        "label": "53",
+        "block_name": "United, Sanvally",
+        "covered_area": "DNCC-41, 42, 43 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1380,
+        "du_per_katha": 1.9,
+        "area_far": 3.7
+      },
+      {
+        "id": "54",
+        "label": "54",
+        "block_name": "Purbachal Residential Area",
+        "covered_area": "Purbachal New Town",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1680,
+        "du_per_katha": 1.9,
+        "area_far": 8.5
+      },
+      {
+        "id": "55",
+        "label": "55",
+        "block_name": "Uttara Phase 3",
+        "covered_area": "DNCC-52, 53 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1760,
+        "du_per_katha": 1.9,
+        "area_far": 8.7
+      },
+      {
+        "id": "56",
+        "label": "56",
+        "block_name": "P&HS and Swarnali Residential Area",
+        "covered_area": "DNCC-43, 44, 48 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1560,
+        "du_per_katha": 1.9,
+        "area_far": 8.1
+      },
+      {
+        "id": "57",
+        "label": "57",
+        "block_name": "Nalvog",
+        "covered_area": "DNCC-52, 53 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 900,
+        "du_per_katha": 2,
+        "area_far": 2.6
+      },
+      {
+        "id": "58",
+        "label": "58",
+        "block_name": "Kallyanpur Retention",
+        "covered_area": "Kallyanpur Retention",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 0,
+        "avg_unit_size_sqft": 0,
+        "du_per_katha": 0,
+        "area_far": 0
+      },
+      {
+        "id": "59",
+        "label": "59",
+        "block_name": "Basila, Chandrima",
+        "covered_area": "DNCC-33, DSCC-34 (part), DSCC-14, 15 (part), 18 (part), 22 (part), 23 (part), 26, 55, 56, 57 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 980,
+        "du_per_katha": 2.3,
+        "area_far": 3.1
+      },
+      {
+        "id": "60",
+        "label": "60",
+        "block_name": "Khilkhet Residential Area",
+        "covered_area": "DNCC-43, 44 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1850,
+        "du_per_katha": 1.7,
+        "area_far": 8.8
+      },
+      {
+        "id": "61",
+        "label": "61",
+        "block_name": "Mirpur D & HS",
+        "covered_area": "DNCC-2, 52 (part)",
+        "block_type": "Planned Area",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 2050,
+        "du_per_katha": 1.7,
+        "area_far": 8.8
+      },
+      {
+        "id": "62",
+        "label": "62",
+        "block_name": "Paikpara, Tolarbagh",
+        "covered_area": "DNCC-10 (part), 11 (part), 12 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 300,
+        "avg_unit_size_sqft": 1250,
+        "du_per_katha": 1.9,
+        "area_far": 3.3
+      },
+      {
+        "id": "63",
+        "label": "63",
+        "block_name": "Kaundia, Aminbazar",
+        "covered_area": "Kaundia Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 175,
+        "avg_unit_size_sqft": 1100,
+        "du_per_katha": 1.3,
+        "area_far": 2
+      },
+      {
+        "id": "64",
+        "label": "64",
+        "block_name": "Kachkura, Mainartek",
+        "covered_area": "DNCC-43 (part), 44 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 890,
+        "du_per_katha": 2.1,
+        "area_far": 2.6
+      },
+      {
+        "id": "65",
+        "label": "65",
+        "block_name": "Pallabi 2",
+        "covered_area": "DNCC-8, 52 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1400,
+        "du_per_katha": 1.7,
+        "area_far": 3.3
+      },
+      {
+        "id": "66",
+        "label": "66",
+        "block_name": "Ghatarchar",
+        "covered_area": "Taranagar (part), Sakta (part) Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 220,
+        "avg_unit_size_sqft": 1150,
+        "du_per_katha": 2,
+        "area_far": 3.2
+      },
+      {
+        "id": "67",
+        "label": "67",
+        "block_name": "Demra, Konapara",
+        "covered_area": "DSCC-63 (part), 64 (part), 69, 70, 73-75 (part)",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 250,
+        "avg_unit_size_sqft": 1280,
+        "du_per_katha": 1.8,
+        "area_far": 3.2
+      },
+      {
+        "id": "68",
+        "label": "68",
+        "block_name": "Subadya, Arakul, Beyara",
+        "covered_area": "Subadya (part), Konda (part), Tegharia (part) Union",
+        "block_type": "Spontaneous Development",
+        "gross_ppa": 200,
+        "avg_unit_size_sqft": 930,
+        "du_per_katha": 2.1,
+        "area_far": 2.7
+      }
+    ],
+    "densityBlockName": [
+      {
+        "id": "reserved",
+        "label": "Reserved",
+        "block_no": "01",
+        "covered_area": "Airport",
+        "block_type": null
+      },
+      {
+        "id": "jinjira_kalindi_aganagar",
+        "label": "Jinjira, Kalindi, Aganagar",
+        "block_no": "02",
+        "covered_area": "Aganagar Union, Kalindi Union, Shuvadya Union (part), Jinjira Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "bashundhara_residential_area",
+        "label": "Bashundhara Residential Area",
+        "block_no": "03",
+        "covered_area": "DNCC-37, 40, 42, 43 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "dakshinkhan",
+        "label": "Dakshinkhan",
+        "block_no": "04",
+        "covered_area": "DNCC-44 (part), 45, 46, 48 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "faridabad",
+        "label": "Faridabad",
+        "block_no": "05",
+        "covered_area": "DNCC-49, 50",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "kawla",
+        "label": "Kawla",
+        "block_no": "06",
+        "covered_area": "DNCC-47, 49 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "uttara_phase_1_2",
+        "label": "Uttara Phase 1 & 2",
+        "block_no": "07",
+        "covered_area": "DNCC-1, 51 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "kamarpara",
+        "label": "Kamarpara",
+        "block_no": "08",
+        "covered_area": "DNCC-53, 54 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "mirpur",
+        "label": "Mirpur",
+        "block_no": "09",
+        "covered_area": "DNCC-2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 16, 52 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "keraniganj_taranagar_bhakurta_konda",
+        "label": "Keraniganj, Taranagar, Bhakurta, Konda",
+        "block_no": "10",
+        "covered_area": "Aliratek, Amin Bazar, Baktabali, Banta, Bhakurta, Hazratpur, Kalatia, Konda, Ruhitpur, Sakta Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "anandanagar_embankment",
+        "label": "Anandanagar Embankment",
+        "block_no": "11",
+        "covered_area": "DNCC-8, 9, 10 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "sheorapara",
+        "label": "Sheorapara",
+        "block_no": "12",
+        "covered_area": "DNCC-10, 11, 12, 13, 14 (part), 16, 28 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "ibrahimpur_east_sheorapara",
+        "label": "Ibrahimpur, East Sheorapara",
+        "block_no": "13",
+        "covered_area": "DNCC-14, 16 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "bauniya",
+        "label": "Bauniya",
+        "block_no": "14",
+        "covered_area": "DNCC-3, 4, 5, 15 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "khilkhet_bhatara",
+        "label": "Khilkhet, Bhatara",
+        "block_no": "15",
+        "covered_area": "DNCC-17, 18, 40 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "baridhara",
+        "label": "Baridhara",
+        "block_no": "16",
+        "covered_area": "DNCC-18, 39, 40 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "gulshan_banani",
+        "label": "Gulshan, Banani",
+        "block_no": "17",
+        "covered_area": "DNCC-19 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "baipail_ashulia_dhamsona_iyarpur",
+        "label": "Baipail, Ashulia, Dhamsona, Iyarpur",
+        "block_no": "18",
+        "covered_area": "Ashulia Union, Dhamsona Union, Shimulia Union, Iyarpur Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "korail",
+        "label": "Korail",
+        "block_no": "19",
+        "covered_area": "DNCC-19 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "mohakhali_dohs",
+        "label": "Mohakhali DOHS",
+        "block_no": "20",
+        "covered_area": "DNCC-20 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "niketan",
+        "label": "Niketan",
+        "block_no": "21",
+        "covered_area": "DNCC-19, 20, 24 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "mohakhali",
+        "label": "Mohakhali",
+        "block_no": "22",
+        "covered_area": "DNCC-20 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "rampura",
+        "label": "Rampura",
+        "block_no": "23",
+        "covered_area": "DNCC-18, 21, 22, 38, 39 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "tejgaon_ia",
+        "label": "Tejgaon I/A",
+        "block_no": "24",
+        "covered_area": "DNCC-24, 25 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "mohammadpur",
+        "label": "Mohammadpur",
+        "block_no": "25",
+        "covered_area": "DNCC-29, 31 (part), 32 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "bangram",
+        "label": "Bangram",
+        "block_no": "26",
+        "covered_area": "Bangram Union, Tetulzhora Union (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "baitul_aman",
+        "label": "Baitul Aman",
+        "block_no": "27",
+        "covered_area": "DNCC-10, 11, 30, 33 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "magbazar",
+        "label": "Magbazar",
+        "block_no": "28",
+        "covered_area": "DNCC-22, 35, 36 (part), DSCC-8, 10 (part), 11, 12, 13, 19 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "old_dhaka",
+        "label": "Old Dhaka",
+        "block_no": "29A",
+        "covered_area": "DSCC-24, 25, 50-58, 59, 60, 61, 62 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "dania_muradpur",
+        "label": "Dania-Muradpur",
+        "block_no": "29B",
+        "covered_area": "DSCC-52, 53, 58, 59, 61, 62 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "green_model_town",
+        "label": "Green Model Town",
+        "block_no": "30",
+        "covered_area": "DSCC-63, 71, 72, 73 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "satarkul_nasirabad",
+        "label": "Satarkul, Nasirabad",
+        "block_no": "31",
+        "covered_area": "DNCC-37 (part), 41-42 (part), DSCC-70 (part), 75 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "basabo_khilgaon",
+        "label": "Basabo, Khilgaon",
+        "block_no": "32",
+        "covered_area": "DNCC-22, 23 (part), DSCC-1-7, 40 (part), 48 (part), 49, 50 (part), 71, 72 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "bandar_mograpara_kanchpur",
+        "label": "Bandar, Mograpara, Kanchpur",
+        "block_no": "33",
+        "covered_area": "Bandar Union, Kanchpur Union, Kolagachhia Union, Madanpur Union, Muchapur Union, Sadipur",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "ramna_dhaka_university_area",
+        "label": "Ramna, Dhaka University Area",
+        "block_no": "34",
+        "covered_area": "DSCC-8, 9, 10 (part), 13, 18, 19, 20, 21, 22 (part), 23 (part), 26 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "panthapath",
+        "label": "Panthapath",
+        "block_no": "35",
+        "covered_area": "DNCC-25, 26, 27 (part); DSCC-15, 16, 17, 18 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "dhanmondi_residential",
+        "label": "Dhanmondi Residential",
+        "block_no": "36",
+        "covered_area": "DNCC-31 (part), 32 (part), 34 (part), DSCC-15, 17, 18 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "narayanganj_center",
+        "label": "Narayanganj Center",
+        "block_no": "37",
+        "covered_area": "NCC-8, 10, 11-17, Baktabali Union, Enayetnagar Union, Fatullah Union, Kashipur Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "tongi",
+        "label": "Tongi",
+        "block_no": "38",
+        "covered_area": "GCC-43, 44, 45, 46, 55, 56, 57 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "birulia",
+        "label": "Birulia",
+        "block_no": "39",
+        "covered_area": "Birulia Union, Savar Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "gopalnagar_ncc_27",
+        "label": "Gopalnagar, NCC 27",
+        "block_no": "40",
+        "covered_area": "NCC-5, 6, 18-27 (part), Gopalnagar Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "dasherkandi_kayetpara",
+        "label": "Dasherkandi, Kayetpara",
+        "block_no": "41",
+        "covered_area": "Kayetpara Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "matuail_sarulia",
+        "label": "Matuail, Sarulia",
+        "block_no": "42A",
+        "covered_area": "DSCC-63 (part), 64 (part), 65, 66, 67, 68, 69 (part), 70 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "kutubpur_fatullah",
+        "label": "Kutubpur, Fatullah",
+        "block_no": "42B",
+        "covered_area": "NCC-1, 2, 3, 8, 7, 9 (part), Kutubpur Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "pathalia",
+        "label": "Pathalia",
+        "block_no": "43",
+        "covered_area": "Pathalia Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "rupganj_isapur",
+        "label": "Rupganj, Isapur",
+        "block_no": "44",
+        "covered_area": "Rupganj Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "bhulta_golakandail",
+        "label": "Bhulta, Golakandail",
+        "block_no": "45",
+        "covered_area": "Bhulta Union, Golakandail Union, Murapara Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "savar_municipality_area",
+        "label": "Savar Municipality Area",
+        "block_no": "46",
+        "covered_area": "SP-1, 2, 3, 4, 5, 6, 7, 8, 9, Tetulzhora Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "jhilmil_residential_area",
+        "label": "Jhilmil Residential Area",
+        "block_no": "47",
+        "covered_area": "Jhilmil Residential Area",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "hemayetpur_tetulzhora",
+        "label": "Hemayetpur, Tetulzhora",
+        "block_no": "48",
+        "covered_area": "Tetulzhora Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "tarabo_municipality",
+        "label": "Tarabo Municipality",
+        "block_no": "49",
+        "covered_area": "TP-1, 2, 3, 4, 5, 6, 7, 8, 9 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "jalsiri",
+        "label": "Jalsiri",
+        "block_no": "50",
+        "covered_area": "Jalsiri Residential Area",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "badda",
+        "label": "Badda",
+        "block_no": "51",
+        "covered_area": "DNCC-37, 38, 39 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "aftabnagar_banashree",
+        "label": "Aftabnagar, Banashree",
+        "block_no": "52",
+        "covered_area": "DNCC-22, 37 (part), DSCC-3, 74 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "united_sanvally",
+        "label": "United, Sanvally",
+        "block_no": "53",
+        "covered_area": "DNCC-41, 42, 43 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "purbachal_residential_area",
+        "label": "Purbachal Residential Area",
+        "block_no": "54",
+        "covered_area": "Purbachal New Town",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "uttara_phase_3",
+        "label": "Uttara Phase 3",
+        "block_no": "55",
+        "covered_area": "DNCC-52, 53 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "phs_and_swarnali_residential_area",
+        "label": "P&HS and Swarnali Residential Area",
+        "block_no": "56",
+        "covered_area": "DNCC-43, 44, 48 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "nalvog",
+        "label": "Nalvog",
+        "block_no": "57",
+        "covered_area": "DNCC-52, 53 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "kallyanpur_retention",
+        "label": "Kallyanpur Retention",
+        "block_no": "58",
+        "covered_area": "Kallyanpur Retention",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "basila_chandrima",
+        "label": "Basila, Chandrima",
+        "block_no": "59",
+        "covered_area": "DNCC-33, DSCC-34 (part), DSCC-14, 15 (part), 18 (part), 22 (part), 23 (part), 26, 55, 56, 57 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "khilkhet_residential_area",
+        "label": "Khilkhet Residential Area",
+        "block_no": "60",
+        "covered_area": "DNCC-43, 44 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "mirpur_d_hs",
+        "label": "Mirpur D & HS",
+        "block_no": "61",
+        "covered_area": "DNCC-2, 52 (part)",
+        "block_type": "Planned Area"
+      },
+      {
+        "id": "paikpara_tolarbagh",
+        "label": "Paikpara, Tolarbagh",
+        "block_no": "62",
+        "covered_area": "DNCC-10 (part), 11 (part), 12 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "kaundia_aminbazar",
+        "label": "Kaundia, Aminbazar",
+        "block_no": "63",
+        "covered_area": "Kaundia Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "kachkura_mainartek",
+        "label": "Kachkura, Mainartek",
+        "block_no": "64",
+        "covered_area": "DNCC-43 (part), 44 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "pallabi_2",
+        "label": "Pallabi 2",
+        "block_no": "65",
+        "covered_area": "DNCC-8, 52 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "ghatarchar",
+        "label": "Ghatarchar",
+        "block_no": "66",
+        "covered_area": "Taranagar (part), Sakta (part) Union",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "demra_konapara",
+        "label": "Demra, Konapara",
+        "block_no": "67",
+        "covered_area": "DSCC-63 (part), 64 (part), 69, 70, 73-75 (part)",
+        "block_type": "Spontaneous Development"
+      },
+      {
+        "id": "subadya_arakul_beyara",
+        "label": "Subadya, Arakul, Beyara",
+        "block_no": "68",
+        "covered_area": "Subadya (part), Konda (part), Tegharia (part) Union",
+        "block_type": "Spontaneous Development"
+      }
+    ]
+  },
+  "farCalculationDetails": {
+    "roadWidths": [
+      {
+        "id": "existing_north",
+        "label": "Existing Road Width - North",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "existing_south",
+        "label": "Existing Road Width - South",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "existing_east",
+        "label": "Existing Road Width - East",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "existing_west",
+        "label": "Existing Road Width - West",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "adjustments_north",
+        "label": "Adjustments - North",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "adjustments_south",
+        "label": "Adjustments - South",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "adjustments_east",
+        "label": "Adjustments - East",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "adjustments_west",
+        "label": "Adjustments - West",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "effective_north",
+        "label": "Effective Road Width - North",
+        "computed": true,
+        "formula": "existing_north + adjustments_north",
+        "unit": "meters"
+      },
+      {
+        "id": "effective_south",
+        "label": "Effective Road Width - South",
+        "computed": true,
+        "formula": "existing_south + adjustments_south",
+        "unit": "meters"
+      },
+      {
+        "id": "effective_east",
+        "label": "Effective Road Width - East",
+        "computed": true,
+        "formula": "existing_east + adjustments_east",
+        "unit": "meters"
+      },
+      {
+        "id": "effective_west",
+        "label": "Effective Road Width - West",
+        "computed": true,
+        "formula": "existing_west + adjustments_west",
+        "unit": "meters"
+      }
+    ],
+    "bonusIncentives": [
+      {
+        "id": "b_plot_area_merge",
+        "label": "Plot Area / Plot Merge",
+        "bonus_far": null
+      },
+      {
+        "id": "b_front_road",
+        "label": "Front Road >30'-0\" wide",
+        "bonus_far": null,
+        "note": "Access road: 33'-3\" = 33.25'; beyond 30' = 3.25'; additional FAR = (3.25 x 0.02) = 0.065"
+      },
+      {
+        "id": "b_a6_building",
+        "label": "A6 Building",
+        "bonus_far": null
+      },
+      {
+        "id": "b_tod",
+        "label": "TOD Effective Zone Area",
+        "bonus_far": null,
+        "note": "MRT Line 6 Tiers: <=300m (+1.00), 300-500m (+0.75), 500-800m (+0.50)"
+      },
+      {
+        "id": "b_tdr",
+        "label": "TDR Purchase",
+        "bonus_far": null
+      },
+      {
+        "id": "b_green_building",
+        "label": "Green Building",
+        "bonus_far": null
+      },
+      {
+        "id": "b_public_place",
+        "label": "Public Place",
+        "bonus_far": null
+      },
+      {
+        "id": "b_far_purchase",
+        "label": "FAR Purchase",
+        "bonus_far": null
+      },
+      {
+        "id": "b_civic_facilities",
+        "label": "Civic Facilities",
+        "bonus_far": null,
+        "note": "1. New school - Central 1/3000 / Outer 1/1000 / Suburban 1/2000 persons - min 1.5 acre - 2. New playground - 1/12,500 persons - min 2 acre - 3. New park - 1/12,500 persons - min 1 acre"
+      }
+    ],
+    "blockSizes": [
+      {
+        "id": "blk_1",
+        "label": "10 - 20 katha"
+      },
+      {
+        "id": "blk_2",
+        "label": "20 katha - 2 acre"
+      },
+      {
+        "id": "blk_3",
+        "label": "2 - 5 acre"
+      },
+      {
+        "id": "blk_4",
+        "label": "Greater than 5 acre"
+      }
+    ],
+    "scalarInputs": [
+      {
+        "id": "plot_area",
+        "label": "Plot Area",
+        "type": "number",
+        "unit": "katha",
+        "required": true,
+        "min": 0
+      },
+      {
+        "id": "fronting_road_width",
+        "label": "Fronting Road Width",
+        "type": "number",
+        "unit": "meters",
+        "required": true,
+        "min": 0
+      },
+      {
+        "id": "road_slated_for_widening",
+        "label": "Road slated for widening",
+        "type": "boolean",
+        "required": false
+      },
+      {
+        "id": "widened_road_width",
+        "label": "Widened Road Width",
+        "type": "number",
+        "unit": "meters",
+        "required": false,
+        "min": 0
+      },
+      {
+        "id": "average_unit_size",
+        "label": "Average Dwelling-Unit Size",
+        "type": "number",
+        "unit": "sq_ft",
+        "required": true,
+        "min": 0
+      },
+      {
+        "id": "density_block_code",
+        "label": "Density-Zoning Block Code",
+        "type": "text",
+        "placeholder": "e.g. DNCC-29, DSCC-15, DSCC-42",
+        "required": false
+      }
+    ]
+  }
 }
